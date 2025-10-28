@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editkaro.in Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Editkaro.in</h1>
+    <p>Social Media Marketing & Video Editing Agency</p>
+  </header>
+
+  <!-- Filter Buttons -->
+  <section class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="short">Short-form</button>
+    <button class="filter-btn" data-filter="long">Long-form</button>
+    <button class="filter-btn" data-filter="gaming">Gaming</button>
+    <button class="filter-btn" data-filter="football">Football</button>
+    <button class="filter-btn" data-filter="ads">Ads</button>
+    <button class="filter-btn" data-filter="anime">Anime</button>
+    <button class="filter-btn" data-filter="doc">Documentary</button>
+    <button class="filter-btn" data-filter="color">Color Grading</button>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="portfolio">
+    <div class="video-card" data-category="short">
+      <img src="Img-1.jpg" muted loop></img>
+      <h3>Short Video 1</h3>
+    </div>
+
+    <div class="video-card" data-category="gaming">
+      <img src="img-2.jpg" muted loop></img>
+      <h3>Gaming Edit</h3>
+    </div>
+
+    <div class="video-card" data-category="football">
+      <img src="img-3.webp" muted loop></img>
+      <h3>Football Edit</h3>
+    </div>
+    <!-- Add more cards per category -->
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <video id="lightboxVideo" controls autoplay></video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

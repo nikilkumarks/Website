@@ -1,0 +1,84 @@
+/* Basic Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+}
+.hero h1 { font-size: 3rem; color: #38bdf8; }
+.hero p { font-size: 1.2rem; opacity: 0.8; }
+
+/* Filters */
+.filters {
+  text-align: center;
+  margin: 30px 0;
+}
+.filter-btn {
+  background: #1e293b;
+  color: #f8fafc;
+  border: none;
+  padding: 10px 18px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.filter-btn:hover, .filter-btn.active {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+/* Portfolio Grid */
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.video-card {
+  background: #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.video-card:hover { transform: scale(1.05); }
+.video-card video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.video-card h3 {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+.lightbox video {
+  width: 80%;
+  max-width: 800px;
+}
+.lightbox .close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
